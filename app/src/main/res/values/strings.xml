@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LauncherTest</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+</resources>

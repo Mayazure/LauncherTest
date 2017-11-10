@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spaceUp"
+        android:layout_gravity="top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/homescroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpPageContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:layout_weight="1"
+            android:background="@color/foreground">
+        </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BT"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATA"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROTA"
+                    android:id="@+id/rota"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:background="@color/background3"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    
+    <!--<TextView-->
+        <!--android:id="@+id/pagetitle"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="500px"-->
+        <!--android:text="Page"-->
+        <!--android:background="@color/foreground"-->
+        <!--android:layout_margin="100px"/>-->
+
+    <!--<Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/spaceDown"-->
+        <!--android:layout_gravity="bottom"/>-->
+
+</LinearLayout>
